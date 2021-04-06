@@ -2,8 +2,10 @@ import discord
 from discord.ext import commands
 import traceback
 import sys
+import os
 
 bot = commands.Bot(command_prefix=".")
+token = os.environ.get('TOKEN');
 
 bot.remove_command("help")
 
@@ -26,4 +28,4 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-bot.run(DISCORD_TOKEN)
+bot.run(token)
