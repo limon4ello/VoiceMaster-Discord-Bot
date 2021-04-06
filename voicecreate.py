@@ -5,7 +5,7 @@ import sys
 import os
 
 bot = commands.Bot(command_prefix=".")
-token = os.environ.get('TOKEN');
+token = os.environ.get('TOKEN')
 
 bot.remove_command("help")
 
