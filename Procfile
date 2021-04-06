@@ -1,1 +1,1 @@
-worker: py voicecreate.py
+worker: python voicecreate.py
